@@ -1,0 +1,36 @@
+<div class="filter-wrapper">
+    <form class="checkboxes-wrapper" [formGroup]="form">
+        <div class="field-group">
+            <input-field [label]="'Search by title'" formControlName="name"></input-field>
+        </div>
+
+        <div formGroupName="lang" class="field field-group">
+            <div class="field">
+                <checkbox-field [label]="'Ru'" formControlName="ru"></checkbox-field>
+            </div>
+            <div class="field">
+                <checkbox-field [label]="'En'" formControlName="en"></checkbox-field>
+            </div>
+        </div>
+
+        <div formGroupName="level" class="field">
+            <div class="field">
+                <checkbox-field [label]="'Hot'" formControlName="hot"></checkbox-field>
+            </div>
+            <div class="field">
+                <checkbox-field [label]="'Intermediate'" formControlName="intermediate"></checkbox-field>
+            </div>
+            <div class="field">
+                <checkbox-field [label]="'Advanced'" formControlName="advanced"></checkbox-field>
+            </div>
+            <div class="field">
+                <checkbox-field [label]="'Hardcore'" formControlName="hardcore"></checkbox-field>
+            </div>
+            <div class="field">
+                <checkbox-field [label]="'Academic'" formControlName="academic"></checkbox-field>
+            </div>
+        </div>
+    </form>
+
+    <button class="btn" type="button" (click)="onReset()">Reset filter</button>
+</div>

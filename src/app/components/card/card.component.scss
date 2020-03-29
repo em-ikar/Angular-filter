@@ -1,0 +1,42 @@
+:host {
+  width: 29%;
+  margin: 0 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+    &-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+      width: 100%;
+      max-width: 1300px;
+      min-height: 220px;
+      padding: 20px;
+      background: white;
+      box-shadow: 0px 0px 5px 0px #c3acac;
+      border-radius: 3px;
+    }
+
+    &-title {
+        font-size: 1.5em;
+    }
+
+    &-speaker {
+        font-size: 1em;
+        margin: 25px 0;
+    }
+
+    &-level {
+        font-size: 1em;
+
+        span {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+<div>
+    <app-filter (filterChange)="onChangeFilter($event)"></app-filter>
+
+    <div class="cards-wrapper">
+        <app-card *ngFor="let item of list" [item]="item"></app-card>
+    </div>
+</div>
