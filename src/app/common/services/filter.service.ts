@@ -17,12 +17,7 @@ export class FilterService {
       return this;
     }
 
-    this.list = backupList.filter((i: ILecture) => {
-      if (i.title.toLocaleLowerCase().match(new RegExp(title.toLocaleLowerCase(), 'g'))) {
-        return true;
-      }
-      return false;
-    });
+    this.list = backupList.filter((i: ILecture) => !!(i.title.toLocaleLowerCase().match(new RegExp(title.toLocaleLowerCase(), 'g'))));
 
     return this;
   }

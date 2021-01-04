@@ -14,7 +14,7 @@ import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
     }
   ]
 })
-export class InputFieldComponent extends FieldBaseComponent implements ControlValueAccessor {
+export class InputFieldComponent extends FieldBaseComponent<string> implements ControlValueAccessor {
 
   constructor() {
     super();

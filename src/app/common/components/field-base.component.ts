@@ -2,33 +2,33 @@ import { ControlValueAccessor } from '@angular/forms';
 import { isNullOrUndefined } from 'util';
 import { Input } from '@angular/core';
 
-export class FieldBaseComponent implements ControlValueAccessor {
+export class FieldBaseComponent<T> implements ControlValueAccessor {
 
-    @Input() label = '';
+    @Input() label: string = '';
 
-    private _value = null;
-
-    set value(data) {
+    set value(data: T) {
         this._value = data;
         this.onChange(data);
     }
 
-    get value() {
+    get value(): T {
         return this._value;
     }
 
+    private _value: T = null;
+
     constructor() { }
 
-    public writeValue(value: any): void {
+    public writeValue(value: T): void {
         if (isNullOrUndefined(value)) { return; }
         this.value = value;
     }
 
-    public registerOnChange(fn: any): void {
+    public registerOnChange(fn): void {
         this.onChange = fn;
     }
 
-    public registerOnTouched(fn: any): void {
+    public registerOnTouched(fn): void {
         this.onTouched = fn;
     }
 

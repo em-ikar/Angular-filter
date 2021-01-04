@@ -15,8 +15,8 @@ export default [
     },
     {
         id: 3,
-        title: '4 лучших паттерна проектирования автоматизированного тестирования (и еще 86)',
-        speakerName: 'MaxRokatansky',
+        title: 'Lazy Load Images in Angular with Two Lines of Code',
+        speakerName: 'Netanel Basal',
         lang: 'en',
         level: 'advanced'
     },
@@ -36,22 +36,22 @@ export default [
     },
     {
         id: 6,
-        title: 'Гетерофронтендер. Моя история успеха.',
-        speakerName: 'Бесстрашный Игорь',
+        title: 'How to get the most from the TypeScript compiler — Angular',
+        speakerName: 'FAM',
         lang: 'en',
         level: 'intermediate'
     },
     {
         id: 7,
-        title: 'Разобьет ли вам сердце Vue.js 3.0?',
-        speakerName: 'Чувствительный Киррил',
+        title: 'Dealing With Permissions in Angular and NgRx',
+        speakerName: 'Matheus Madeira',
         lang: 'en',
         level: 'Academic'
     },
     {
         id: 8,
-        title: 'Как сказать родителям бекендерам что ты любишь фронтенд.',
-        speakerName: 'Сладкий Иван',
+        title: 'Angular Course — Architecture Overview',
+        speakerName: 'Miroslav Maksimovic',
         lang: 'en',
         level: 'Academic'
     },

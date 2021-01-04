@@ -14,7 +14,7 @@ import { FieldBaseComponent } from '../field-base.component';
     }
   ]
 })
-export class CheckboxFieldComponent extends FieldBaseComponent {
+export class CheckboxFieldComponent extends FieldBaseComponent<boolean> {
 
   constructor() { super(); }
 
